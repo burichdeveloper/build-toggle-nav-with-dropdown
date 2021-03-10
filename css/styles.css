@@ -181,11 +181,14 @@ section {
     .main-menu svg:last-of-type {
         margin-left: 10px;
     }
+    
+    ul.main-menu li:focus-within > ul,
+    ul.main-menu li > ul:focus {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        max-height: 50rem;
+    }
 }
 
 
-/* TO DO before turning in.
-- finish off the wide screen version of the menu
-- upload and submit a url of the finished build
-- Copy and paste header to every page.
-*/
